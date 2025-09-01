@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 *{
     margin: 0;
 }
@@ -278,3 +276,25 @@ nav a:hover::after {
     color: #4b5563;
     line-height: 1.5;
 }
+    @media (max-width: 640px) {
+      .profile-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+      }
+      .apresentacao {
+        text-align: center;
+        padding: 1rem;
+      }
+      .botoes, .icones {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      #inicio {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+      }
+    }
