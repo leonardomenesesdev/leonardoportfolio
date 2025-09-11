@@ -36,3 +36,9 @@
     if (persist) localStorage.setItem(STORAGE_KEY, theme);
   }
 })();
+  const btn = document.getElementById("hamburguer-btn");
+  const menu = document.getElementById("menu-navegacao");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
