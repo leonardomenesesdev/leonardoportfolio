@@ -4,455 +4,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Meneses</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
-<body class="overflow-x-hidden">
-  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 flex justify-between items-center px-6 py-3">
-    <h2 class="text-xl font-bold text-gray-800"><span id="l-id">L</span><span id="m-id">M</span></h2>
-    <nav class="space-x-4 hidden sm:flex">
-      <a href="#inicio" class="text-gray-700 hover:text-blue-600">Início</a>
-      <a href="#sobre" class="text-gray-700 hover:text-blue-600">Sobre</a>
-      <a href="#habilidades" class="text-gray-700 hover:text-blue-600">Habilidades</a>
-      <a href="#projetos" class="text-gray-700 hover:text-blue-600">Projetos</a>
-      <a href="#contato" class="text-gray-700 hover:text-blue-600">Contato</a>
+<body>
+  <header class="header">
+    <h2 class="titulo-logo"><span id="l-id">L</span><span id="m-id">M</span></h2>
+    <nav class="menu-navegacao">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" aria-pressed="false">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
     <section id="inicio">
         <div class="profile-img">
         <div class="circle-content">
-            <img src="./profile.jpg" alt="">
+            <img src="./profile.jpeg" alt="">
         </div>
         </div>
         <div class="apresentacao">
             <h2>Olá, eu sou <span>Leonardo Meneses</span></h2>
-            <p>Estudante de Ciência da Computação apaixonado por desenvolvimento <span style="color:#0366d6">Backend</span></p>
+            <p>Estudante de Ciência da Computação e <span id= "desenvolvedor">Desenvolvedor</span></p>
         </div>
         <div class="botoes">
             <a href="#projetos" class="btn-azul">Ver Projetos</a>
             <a href="#contato" class="btn-vermelho">Entre em Contato</a>
         </div>
         <div class="icones">
-            <a href="https://github.com/leonardomenesesdev"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/leonardo-meneses-7919532a1/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:menesesleonardo20@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/leonardomenesesdev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/leonardo-meneses-7919532a1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:menesesleonardo20@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </section>
-    <section id="sobre" class="bg-gray-50 py-40 px-4">
-  <div class="text-center mb-12" data-aos="fade-down">
-    <h2 class="text-3xl font-bold text-gray-900 mb-2">Sobre Mim</h2>
-    <p class="text-gray-600 text-lg">Conheça um pouco mais sobre minha jornada acadêmica e profissional</p>
+    <section id="sobre" class="secao-sobre">
+      <div class="sobre-header" data-aos="fade-down">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <p class="sobre-subtitulo">Conheça um pouco mais sobre minha jornada acadêmica e profissional</p>
+      </div>
+      <div class="sobre-conteudo">
+        <div class="sobre-coluna" data-aos="fade-right">
+          <div class="sobre-texto">
+            <h3 class="sobre-historia-titulo">Minha História</h3>
+            <p class="sobre-historia-paragrafo">
+              Sou Leonardo Meneses, estudante de Ciência da Computação e estagiário em Desenvolvimento FullStack no Instituto Atlântico.
+              Tenho um interesse especial pelo desenvolvimento Backend. Atualmente, busco criar mais projetos que envolvam essa stack para ampliar minha experiência e conhecimento.</p>
+            <p class="sobre-historia-paragrafo">
+              Estou em constante busca de conhecimento e projetos enriquecedores.
+            </p>
+            <p class="sobre-infos">
+              <i class="fa-solid fa-graduation-cap icone-azul"></i> UNIFOR - 4° Semestre
+            </p>
+          </div>
+        </div>
+
+
+
+<div class="container" data-aos="fade-left">
+  <div class="card" data-aos="zoom-in" data-aos-delay="100">
+    <h3>
+      <i class="fa-solid fa-code icon blue"></i>
+      Desenvolvedor
+    </h3>
+    <p>Em busca de problemas que possam ser solucionados com a computação.</p>
   </div>
 
-  <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-start">
-<div class="w-full lg:w-1/2 px-4 lg:px-0" data-aos="fade-right">
-  <div class="max-w-xl mx-auto lg:mx-0">
-    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center lg:text-left">Minha História</h3>
-    <p class="text-gray-700 text-lg lg:text-x leading-relaxed text-center lg:text-left mb-4">
-      Sou Leonardo Meneses, estudante de Ciência da Computação e estagiário no Instituto Atlântico.
-      Tenho um interesse especial pelo desenvolvimento Backend. Atualmente, busco criar mais projetos que envolvam essa stack para ampliar minha experiência e conhecimento.</p>
-    <p class="text-gray-700 text-lg lg:text-x leading-relaxed text-center lg:text-left mb-4">
-      Estou em constante busca de conhecimento na área de desenvolvimento Backend.
-    </p>
-    <p class="text-700 font-semibold flex items-center justify-center lg:justify-start gap-2">
-      <i class="fa-solid fa-graduation-cap text-blue-600"></i> UNIFOR - 4° Semestre
-    </p>
+  <div class="card" data-aos="zoom-in" data-aos-delay="200">
+    <h3>
+      <i class="fa-solid fa-bullseye icon red"></i>
+      Inglês
+    </h3>
+    <p>Consigo dialogar em inglês, interpretar documentações e vídeos.</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in" data-aos-delay="300">
+    <h3>
+      <i class="fa-solid fa-users icon blue-light"></i>
+      Colaborativo
+    </h3>
+    <p>Gosto de trabalhar em equipe e em ambientes colaborativos.</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in" data-aos-delay="400">
+    <h3>
+      <i class="fa-solid fa-book-open-reader icon pink"></i>
+      Estudante
+    </h3>
+    <p>Estudante aplicado, sempre em busca de mais conhecimento técnico.</p>
   </div>
 </div>
+</section>
+<section id="habilidades" class="habilidades">
+  <div class="section-header" data-aos="fade-down">
+    <h2>Habilidades</h2>
+    <p id="texto">Conheça as minhas Hard Skills e o que estou aprendendo 🔥</p>
+  </div>
 
-
-
-<div class="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-10 lg:ml-16" data-aos="fade-left">
-  <div class="card p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition text-left" data-aos="zoom-in" data-aos-delay="100" >
-        <h3 class="font-bold text-gray-800 mb-1 text-left">
-            <i class="fa-solid fa-code text-2xl text-blue-600"></i>
-
-            Desenvolvedor</h3>
-        <p class="text-gray-600 text-sm">Sempre em busca de problemas que possam ser solucionados com a computação.</p>
+  <div class="skills-grid">
+    <!-- Frontend -->
+    <div class="skill-card">
+      <div class="skill-title">
+        <span class="dot blue"></span>
+        <h3>Frontend</h3>
       </div>
-
-      <div class="card p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="font-bold text-gray-800 mb-1 text-left">
-            <i class="fa-solid fa-bullseye text-2xl text-red-600"></i>
-            Inglês</h3>
-        <p class="text-gray-600 text-sm">Consigo dialogar em inglês, interpretar documentações e vídeos, estando apto para um movimento de internacionalização</p>
-      </div>
-      <div class="card p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition text-left" data-aos="zoom-in" data-aos-delay="300">
-        <h3 class="font-bold text-gray-800 mb-1 text-left">
-            <i class="fa-solid fa-users text-2xl text-blue-500"></i>
-            Colaborativo</h3>
-        <p class="text-gray-600 text-sm">Acredito no poder do trabalho em equipe e da troca de conhecimento.</p>
-      </div>
-      <div class="card p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition text-left" data-aos="zoom-in" data-aos-delay="400">
-        <h3 class="font-bold text-gray-800 mb-1 text-left">
-            <i class="fa-solid fa-book-open-reader text-2xl text-pink-600"></i>
-            Estudante</h3>
-        <p class="text-gray-600 text-sm">Estudante aplicado, sempre em busca de mais conhecimento técnico.</p>
+      <div class="tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">React</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">JavaScript</span>
       </div>
     </div>
-  </div>
-</section>
-<section id="habilidades" class="bg-white-50 py-40 px-4">
- <div class="text-center mb-12" data-aos="fade-down">
-    <h2 class="text-3xl font-bold text-gray-900 mb-2">Habilidades</h2>
-    <p class="text-gray-600 text-lg">Conheça as minhas Hard Skills e o que estou aprendendo 🔥</p>
-  </div>
- <div class="max-w-7xl mx-auto px-4 py-8">
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-    <!-- Frontend -->
-  <div class="border border-gray-200 rounded-lg p-4 shadow-sm">
-  <div class="flex items-center gap-2 mb-3">
-    <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-    <h3 class="font-semibold text-gray-800">Frontend</h3>
-  </div>
-  <div class="flex flex-wrap gap-2">
-    <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">HTML5</span>
-    <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">CSS3</span>
-    <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">React</span>
-    <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Tailwind CSS</span>
-    <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">JavaScript</span>
-  </div>
-</div>
-
 
     <!-- Backend -->
-    <div class="border border-gray-200 rounded-lg p-4 shadow-sm">
-      <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-        <h3 class="font-semibold text-gray-800">Backend</h3>
+    <div class="skill-card">
+      <div class="skill-title">
+        <span class="dot red"></span>
+        <h3>Backend</h3>
       </div>
-      <div class="flex flex-wrap gap-2">
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Java</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Kotlin</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Spring Boot</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Node.js</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">RESTful API's</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Supertest</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">PostgreSQL</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Firebase</span>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">RESTful API's</span>
+        <span class="tag">Supertest</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Firebase</span>
       </div>
     </div>
-
-
 
     <!-- Ferramentas -->
-    <div class="border border-gray-200 rounded-lg p-4 shadow-sm">
-      <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
-        <h3 class="font-semibold text-gray-800">Ferramentas</h3>
+    <div class="skill-card">
+      <div class="skill-title">
+        <span class="dot dark"></span>
+        <h3>Ferramentas</h3>
       </div>
-      <div class="flex flex-wrap gap-2">
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Git</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">GitHub</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Postman</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Figma</span>
-      </div>
-
-
-    </div>
-    <div class="border border-gray-200 rounded-lg p-4 shadow-sm">
-      <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-        <h3 class="font-semibold text-gray-800">Metodologia Ágil</h3> 
-        <!-- trocar para metodologia agil -->
-      </div>
-      <div class="flex flex-wrap gap-2">
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Scrum</span>
-        <span class="bg-gray-100 text-sm text-gray-800 font-medium px-3 py-1 hover:bg-gray-200 rounded-full">Kanban</span>
+      <div class="tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Supertest</span>
+        <span class="tag">Figma</span>
       </div>
     </div>
 
+    <!-- Metodologia Ágil -->
+    <div class="skill-card">
+      <div class="skill-title">
+        <span class="dot blue"></span>
+        <h3>Metodologia Ágil</h3>
+      </div>
+      <div class="tags">
+        <span class="tag">Scrum</span>
+        <span class="tag">Kanban</span>
+      </div>
+    </div>
   </div>
-  
-</div>
-<div class="text-center">
-  <h3 class="text-3xl font-bold text-gray-900 mb-5">Aprendendo Atualmente</h3>
 
- <div class="flex flex-wrap justify-center gap-4 mb-6">
-  <span class="px-5 py-1.5 rounded-full text-white font-semibold bg-gradient-to-r from-blue-500 to-red-500 shadow-md">AWS</span>
-  <span class="px-5 py-1.5 rounded-full text-white font-semibold bg-gradient-to-r from-blue-500 to-red-500 shadow-md">Docker</span>
-  <span class="px-5 py-1.5 rounded-full text-white font-semibold bg-gradient-to-r from-blue-500 to-red-500 shadow-md">Angular</span>
-  <span class="px-5 py-1.5 rounded-full text-white font-semibold bg-gradient-to-r from-blue-500 to-red-500 shadow-md">MongoDB</span>
-</div>
-
-
-  <p class="text-gray-600 text-base">
-    Sempre em busca de novas tecnologias para expandir meu conhecimento
-  </p>
-</div>
-   <div className="grid md:grid-cols-2 gap-8"></div>
+  <!-- Aprendendo Atualmente -->
+  <div class="learning">
+    <h3>Aprendendo Atualmente</h3>
+    <div class="learning-tags">
+      <span class="learning-tag">AWS</span>
+      <span class="learning-tag">Docker</span>
+      <span class="learning-tag">Angular</span>
+    </div>
+    <p>Sempre em busca de novas tecnologias para expandir meu conhecimento</p>
+  </div>
 </section>
 
-<section id="projetos" class="py-20 bg-gray-50">
-  <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold text-gray-900">Meus Projetos</h2>
-    <p class="text-gray-600 text-lg mt-2">
-      Alguns dos projetos que desenvolvi para aplicar meus conhecimentos e aprender mais.
-    </p>
+
+<section id="projetos" class="projetos">
+  <div class="section-header">
+    <h2>Meus Projetos</h2>
+    <p>Alguns dos projetos que desenvolvi para aplicar meus conhecimentos e aprender mais.</p>
   </div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-4">
+  <div class="projetos-grid">
     <!-- Card 1 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-      <div class="relative">
-        <img src="projetos/gerenciamento-estudantil.png" alt="Projeto 1" class="w-full h-48 object-cover"> 
-        <span class="absolute top-3 right-3 bg-green-500 text-white text-sm font-medium px-3 py-1 rounded-full shadow">
-          Concluído
-        </span>
+    <div class="projeto-card">
+      <div class="card-img">
+        <img src="projetos/reprodutor.png" alt="Projeto 1">
+        <span class="status concluido">Concluído</span>
       </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">Reprodutor de Áudio MP3/WAV</h3>
-        <p class="text-gray-600 mb-4">
-         Aplicação Java feita para reproduzir áudios, contando com funcionalidades como a criação de playlists.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Java</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">JavaFX</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">POO</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Tratamento de erros e exceções</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Git</span>
+      <div class="card-content">
+        <h3>Reprodutor de Áudio MP3/WAV</h3>
+        <p>Aplicação Java feita para reproduzir áudios, contando com funcionalidades como a criação de playlists.</p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">JavaFX</span>
+          <span class="tag">POO</span>
+          <span class="tag">Tratamento de erros e exceções</span>
+          <span class="tag">Git</span>
         </div>
-        <div class="flex gap-4">
-          <a href="#" class="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition text-sm">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
-
+        <div class="links">
+          <a href="https://github.com/leonardomenesesdev/reprodutor-de-audio-java"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-      <div class="relative">
-        <img src="projetos/delivery-app.png" alt="Projeto 2" class="w-full h-48 object-cover">
-        <span class="absolute top-3 right-3 bg-green-500 text-white text-sm font-medium px-3 py-1 rounded-full shadow">
-          Concluído
-        </span>
+    <div class="projeto-card">
+      <div class="card-img">
+        <img src="/projetos//shape.png" alt="Projeto 2">
+        <span class="status concluido">Concluído</span>
       </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">App Mobile de Academia</h3>
-        <p class="text-gray-600 mb-4">
-          Aplicativo mobile para academia, contando com criação de treinos, edição de dados e muito mais.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Kotlin</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">JetPack Composable</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Firebase</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Git</span>
+      <div class="card-content">
+        <h3>App Mobile de Academia</h3>
+        <p>Aplicativo mobile para academia, contando com criação de treinos, edição de dados e muito mais.</p>
+        <div class="tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">JetPack Composable</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Git</span>
         </div>
-        <div class="flex gap-4">
-          <a href="#" class="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition text-sm">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
+        <div class="links">
+          <a href="https://github.com/leonardomenesesdev/shapenow.git"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
     </div>
-      <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-      <div class="relative">
-        <img src="projetos/delivery-app.png" alt="Projeto 2" class="w-full h-48 object-cover">
-        <span class="absolute top-3 right-3 bg-yellow-500 text-white text-sm font-medium px-3 py-1 rounded-full shadow">
-          Em Desenvolvimento
-        </span>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">Aplicação Web para encurtar URL's</h3>
-        <p class="text-gray-600 mb-4">
-          Aplicação Web para encurtar url's, contando com login e armazenamento de url's encurtadas.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">React</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Next.js</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Node.js</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">TypeScript</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Firebase</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Git</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">AWS</span>
-        </div>
-        <div class="flex gap-4">
-          <a href="#" class="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition text-sm">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
 
+    <!-- Card 3 -->
+    <div class="projeto-card">
+      <div class="card-img">
+        <img src="projetos/encurtador.png" alt="Projeto 3">
+        <span class="status em-dev">Em Desenvolvimento</span>
+      </div>
+      <div class="card-content">
+        <h3>Aplicação Web para encurtar URL's</h3>
+        <p>Aplicação Web para encurtar url's, contando com login e armazenamento de url's encurtadas.</p>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Git</span>
+          <span class="tag">AWS</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/leonardomenesesdev/encurtador-url"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
     </div>
-     <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-      <div class="relative">
-        <img src="projetos/delivery-app.png" alt="Projeto 2" class="w-full h-48 object-cover">
-        <span class="absolute top-3 right-3 bg-yellow-500 text-white text-sm font-medium px-3 py-1 rounded-full shadow">
-          Em Desenvolvimento
-        </span>
-      </div>
-      <div class="p-6">
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">Aplicação Web para encurtar URL's</h3>
-        <p class="text-gray-600 mb-4">
-          Aplicação Web para encurtar url's, contando com login e armazenamento de url's encurtadas.
-        </p>
-        <div class="flex flex-wrap gap-2 mb-4">
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">React</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Next.js</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Node.js</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">TypeScript</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Firebase</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">Git</span>
-          <span class="bg-gray-100 text-sm px-3 py-1 rounded-full font-medium text-gray-800">AWS</span>
-        </div>
-        <div class="flex gap-4">
-          <a href="#" class="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition text-sm">
-            <i class="fa-brands fa-github"></i> Código
-          </a>
 
+    <!-- Card 4 -->
+    <div class="projeto-card">
+      <div class="card-img">
+        <img src="projetos/dolist.png" alt="Projeto 4">
+        <span class="status concluido">Concluído</span>
+      </div>
+      <div class="card-content">
+        <h3>To Do List</h3>
+        <p>Aplicação To Do List com autenticação JWT.</p>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Postman</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Swagger</span>
+          <span class="tag">Git</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/leonardomenesesdev/dolist?tab=readme-ov-file"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="contato" class="py-20 bg-white">
-  <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold text-gray-900">Vamos Conversar?</h2>
-    <p class="text-gray-600 text-lg mt-2">
+<section id="contato">
+  <div class="contato-header">
+    <h2>Vamos Conversar?</h2>
+    <p>
       Estou sempre aberto a novas oportunidades e parcerias. Entre em contato!
     </p>
   </div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4">
-    <!-- Informações de Contato -->
-    <div>
-      <h3 class="text-2xl font-semibold text-gray-900 mb-6">Informações de Contato</h3>
+  <div class="contato-grid">
+    <div class="contato-info">
+      <h3>Informações de Contato</h3>
       
-      <div class="space-y-4 mb-8">
-        <div class="flex items-center space-x-4">
-          <div class="bg-blue-100 p-3 rounded-lg">
-            <i class="fa-solid fa-envelope text-blue-600 text-xl"></i>
-          </div>
+      <div class="info-list">
+        <div class="info-item">
+          <div class="icon bg-red"><i class="fa-solid fa-envelope"></i></div>
           <div>
-            <p class="text-sm text-gray-500">Email</p>
-            <p class="text-gray-800">menesesleonardo20@gmail.com</p>
+            <p class="label">Email</p>
+            <p>menesesleonardo20@gmail.com</p>
           </div>
         </div>
         
-        <div class="flex items-center space-x-4">
-          <div class="bg-red-100 p-3 rounded-lg">
-            <i class="fa-solid fa-phone text-red-500 text-xl"></i>
-          </div>
-        </div>
-        
-        <div class="flex items-center space-x-4">
-          <div class="bg-blue-100 p-3 rounded-lg">
-            <i class="fa-solid fa-location-dot text-blue-600 text-xl"></i>
-          </div>
+        <div class="info-item">
+          <div class="icon bg-blue"><i class="fa-solid fa-location-dot"></i></div>
           <div>
-            <p class="text-sm text-gray-500">Localização</p>
-            <p class="text-gray-800">Fortaleza, CE - Brasil</p>
+            <p class="label">Localização</p>
+            <p>Fortaleza, CE - Brasil</p>
           </div>
         </div>
       </div>
 
       <!-- Redes sociais -->
-      <h4 class="font-semibold text-gray-900 mb-4">Conecte-se comigo</h4>
-      <div class="flex space-x-4 mb-8">
-        <a href="https://github.com/leonardomenesesdev" class="p-2 bg-gray-100 rounded-md text-xl text-gray-700 hover:bg-gray-200 transition">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/leonardo-meneses-7919532a1/" class="p-2 bg-gray-100 rounded-md text-xl text-gray-700 hover:bg-gray-200 transition">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      
+      <h4 id="conecta">Conecte-se comigo</h4>
+      <div class="social">
+        <a href="https://github.com/leonardomenesesdev"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/leonardo-meneses-7919532a1/"><i class="fa-brands fa-linkedin"></i></a>
       </div>
 
-      <!-- Call to action -->
-      <div class="bg-gradient-to-r from-blue-100 to-gray-100 p-5 rounded-lg">
-        <h5 class="font-semibold text-gray-900 mb-1">Pronto para trabalhar juntos?</h5>
-        <p class="text-gray-700 text-sm">
-          Estou disponível para oportunidades de estágio, projetos freelance ou apenas para trocar uma ideia sobre tecnologia!
-        </p>
-        <a href="mailto:menesesleonardo20@gmail.com" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm">
-          <i class="fa-solid fa-envelope mr-2"></i>Enviar Email
-        </a>
-      </div>
+
     </div>
 
-   <form action="https://formsubmit.co/menesesleonardo20@gmail.com" method="POST">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-    <input 
-      type="text" 
-      name="name" 
-      placeholder="Seu nome completo" 
-      class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-      required
-    >
-    <input 
-      type="email" 
-      name="email" 
-      placeholder="seu@email.com" 
-      class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-      required
-    >
-  </div>
+    <!-- Formulário -->
+    <form action="https://formsubmit.co/menesesleonardo20@gmail.com" method="POST">
+      <div class="form-grid">
+        <input type="text" name="name" placeholder="Seu nome completo" required>
+        <input type="email" name="email" placeholder="seu@email.com" required>
+      </div>
 
-  <input 
-    type="text" 
-    name="subject" 
-    placeholder="Sobre o que você gostaria de conversar?" 
-    class="w-full mb-4 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-    required
-  >
+      <input type="text" name="subject" placeholder="Sobre o que você gostaria de conversar?" required>
+      <textarea name="message" rows="5" placeholder="Conte-me mais sobre sua ideia ou projeto..." required></textarea>
 
-  <textarea 
-    name="message" 
-    rows="5" 
-    placeholder="Conte-me mais sobre sua ideia ou projeto..." 
-    class="w-full mb-4 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-    required
-  ></textarea>
+      <input type="hidden" name="_captcha" value="false">
 
-  <input type="hidden" name="_captcha" value="false">
-
-  <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-
-  <button 
-    type="submit" 
-    class="w-full bg-gradient-to-r from-blue-600 to-red-500 text-white py-3 rounded-md font-semibold hover:opacity-90 transition"
-  >
-    <i class="fa-solid fa-paper-plane mr-2"></i> Enviar Mensagem
-  </button>
-</form>
-
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar Mensagem</button>
+    </form>
   </div>
 </section>
-<footer class="bg-gray-900 text-gray-300 py-12 px-4 mt-20">
-  <div class="max-w-6xl mx-auto text-center">
-    <h3 class="text-2xl font-bold text-purple-300 mb-2">Leonardo Meneses</h3>
-    <p class="text-gray-400 mb-6">
-      Estudante de Ciência da Computação, futuro <br class="hidden sm:inline"> desenvolvedor apaixonado por tecnologia.
+
+<footer>
+  <div class="footer-content">
+    <h3>Leonardo Meneses</h3>
+    <p>
+      Estudante de Ciência da Computação, futuro <br> desenvolvedor apaixonado por tecnologia.
     </p>
-    <hr class="border-gray-700 mb-6">
-    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-      <p class="mb-4 md:mb-0">&copy; 2024 Leonardo Meneses. Todos os direitos reservados.</p>
+    <hr>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Leonardo Meneses. Todos os direitos reservados.</p>
       <p>
-        Feito com 
-        <span class="text-red-500">❤️</span> 
-        e muito código 
-        <a href="#inicio" class="ml-2 text-gray-400 hover:text-white transition">
-          <i class="fa-solid fa-arrow-up"></i>
-        </a>
+        Feito com <span class="heart">❤️</span> e muito código 
+        <a href="#inicio"><i class="fa-solid fa-arrow-up"></i></a>
       </p>
     </div>
   </div>
 </footer>
 
 
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // duração em milissegundos
-    once: true      // anima apenas uma vez
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
