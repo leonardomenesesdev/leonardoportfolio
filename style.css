@@ -43,15 +43,18 @@ html[data-theme="dark"] {
 
 *{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    overflow-x: hidden;
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* impede scroll lateral */
 }
 .header{
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10%;
     background-color: var(--surface-alt);
     backdrop-filter: blur(4px);
     color: var(--text-light);
@@ -59,57 +62,84 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    box-sizing: border-box;
 }
 
+/* Logo */
 .titulo-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #1f2937;
 }
+
 #l-id{
     font-weight: bold;
     font-size: 2rem;
+    line-height: 1;
     background: var(--logo-degrade-a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 #m-id{
     font-size: 2rem;
     font-weight: bold;
+    line-height: 1;
     background: var(--logo-degrade-b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+/* Navegação */
 .menu-navegacao{
     display: flex;
+    align-items: center;
     gap: 1.5rem;
 }
 
-
-.hamburguer {
-  display: none;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  color: var(--sky);
-
+.menu-navegacao a{
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.menu-navegacao a:hover{
+    color: #2563eb;
 }
 
-section{
-  width: 100%;
+/* Botão hamburguer (mobile) */
+.hamburguer {
+    display: none;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    color: var(--sky);
+    background: none;
+}
+
+
+
+/* Botão de alternar tema */
+#theme-toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--sky);
+    display: flex;
+    align-items: center;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .header{
-    width: 100vw;
+    width: 100%;
   }
+
   .menu-navegacao {
     position: absolute;
     top: 100%;
@@ -118,13 +148,17 @@ section{
     flex-direction: column;
     gap: 1rem;
     width: 200px;
-      align-items: center; /* 🔥 garante que ícone e textos fiquem alinhados */
+    align-items: center;
     padding: 1rem;
     display: none; /* escondido por padrão */
   }
 
   .menu-navegacao.show {
-    display: flex; /* aparece quando clicar */
+    display: flex; 
+  }
+
+  .menu-navegacao a{
+    color: var(--sky);
   }
 
   .hamburguer {
@@ -132,22 +166,6 @@ section{
   }
 }
 
-.menu-navegacao a{
-    color: var(--text);
-    text-decoration: none;
-    transition: color 0.2s;
-
-}
-.menu-navegacao a:hover{
-    color: #2563eb;
-}
-@media (max-width: 768px) {
-  .menu-navegacao a{
-    color: var(--sky);
-  }
-
-  
-}
 #inicio {
     padding-top: 12vh; 
     min-height: 100vh;
@@ -252,6 +270,8 @@ section{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: black;
     justify-content: center;
     transition: transform 0.2s ease;
 }
@@ -295,7 +315,7 @@ section{
   margin: 0 auto;
   display: flex;
   flex-direction: column; /* padrão mobile */
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
 }
 
